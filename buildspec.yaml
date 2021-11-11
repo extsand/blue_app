@@ -31,8 +31,8 @@ phases:
   build:
     commands:
     # some....
-    - echo "Build with git hooks"
-    - echo ${CODEBUILD_RESOLVED_SOURCE_VERSION}
+    - echo Build with git hooks
+    - echo git commit is - ${CODEBUILD_RESOLVED_SOURCE_VERSION}
     - echo "Build application"
     - echo "go to next step"
 
