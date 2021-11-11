@@ -15,7 +15,10 @@ phases:
     - echo "We prepare to work"
     - echo "version is - ${VERSION}"
     - echo "workdir is - ${DIR}"
+    - echo ${CODEBUILD_SRC_DIR}
+    - echo ${CODEBUILD_RESOLVED_SOURCE_VERSION}
     - echo "go to next step"
+
 
   install:
     commands:
