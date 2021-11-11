@@ -30,7 +30,7 @@ phases:
     - echo "go to next step"
 
   info:
-    commands:s
+    commands:
     # some...
     - echo "Send info messages"
     - echo "finish"
