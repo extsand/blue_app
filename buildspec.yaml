@@ -13,8 +13,8 @@ phases:
     commands:
     # some...
     - echo "We prepare to work"
-    - echo ${VERSION}
-    - echo ${DIR}
+    - echo "version is - ${VERSION}"
+    - echo "workdir is - ${DIR}"
     - echo "go to next step"
 
   install:
