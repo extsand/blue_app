@@ -1,0 +1,36 @@
+version: 0.2
+
+env:
+  variables:
+    NAME: "Golden stone"
+    ENV: "developer-mode"
+    VERSION: "${CODEBUILD_RESOLVED_SOURCE_VERSION}"
+    DIR: "${CODEBUILD_SRC_DIR}"
+
+
+phases:
+  prepare:
+    commands:
+    # some...
+    - echo "We prepare to work"
+    - echo ${VERSION}
+    - echo ${DIR}
+    - echo "go to next step"
+
+  install:
+    commands:
+    # some....
+    - echo "Install environment"
+    - echo "go to next step"
+
+  build:
+    commands:
+    # some....
+    - echo "Build application"
+    - echo "go to next step"
+
+  info:
+    commands:s
+    # some...
+    - echo "Send info messages"
+    - echo "finish"
