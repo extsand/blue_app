@@ -9,7 +9,7 @@ env:
 
 
 phases:
-  prepare:
+  pre_build:
     commands:
     # some...
     - echo "We prepare to work"
@@ -29,7 +29,7 @@ phases:
     - echo "Build application"
     - echo "go to next step"
 
-  info:
+  post_build:
     commands:
     # some...
     - echo "Send info messages"
