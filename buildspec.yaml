@@ -1,3 +1,5 @@
+# more about
+# https://docs.aws.amazon.com/codebuild/latest/userguide/build-spec-ref.html
 version: 0.2
 
 env:
@@ -18,7 +20,7 @@ phases:
     - echo ${CODEBUILD_SRC_DIR}
     - echo ${CODEBUILD_RESOLVED_SOURCE_VERSION}
     - echo "go to next step"
-
+    finally: echo "I'm always run. Even if jobs was falls "
 
   install:
     commands:
