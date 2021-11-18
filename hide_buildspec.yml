@@ -31,6 +31,7 @@ phases:
   build:
     commands:
     # some....
+    - echo Modify buildspek
     - echo Build with git hooks
     - echo git commit is - ${CODEBUILD_RESOLVED_SOURCE_VERSION}
     - echo "Build application"
