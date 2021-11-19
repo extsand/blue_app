@@ -4,9 +4,9 @@ version: 0.2
 
 env:
   variables:
-    NAME: "Golden stone"
+    NAME: "blue-app"
     ENV: "developer-mode"
-    VERSION: "${CODEBUILD_RESOLVED_SOURCE_VERSION}"
+    VERSION_FROM_GIT: "${CODEBUILD_RESOLVED_SOURCE_VERSION}"
     DIR: "${CODEBUILD_SRC_DIR}"
 
 
@@ -31,10 +31,10 @@ phases:
   build:
     commands:
     # some....
-    - echo Say somethin about this app.....................=_=
-    - echo Build with git hooks
-    - echo git commit is - ${CODEBUILD_RESOLVED_SOURCE_VERSION}
-    - echo "Build applicatio
+    # - echo Build with git hooks
+    # - echo git commit is - ${CODEBUILD_RESOLVED_SOURCE_VERSION}
+    - ls -la
+    - make build-app APP_TAG=${CODEBUILD_RESOLVED_SOURCE_VERSION}
 
   # post_build:
   #   commands:
