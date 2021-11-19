@@ -37,7 +37,7 @@ build-app:
 
 	echo "Build task started"
 	
-	docker build -t $(APP_IMAGE) ./app/.
+	docker build -t $(APP_IMAGE) ./.
 	docker push $(APP_IMAGE)
 	echo "------ All task is done -------"
 
