@@ -32,7 +32,8 @@ phases:
     commands:
     # some....
     # - echo Build with git hooks
-    # - echo git commit is - ${CODEBUILD_RESOLVED_SOURCE_VERSION}
+    - echo Manual build-method
+    - echo git commit is - ${CODEBUILD_RESOLVED_SOURCE_VERSION}
     - ls -la
     - make build-app APP_TAG=${CODEBUILD_RESOLVED_SOURCE_VERSION}
 
