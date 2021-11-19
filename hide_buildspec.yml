@@ -23,7 +23,8 @@ phases:
   #   finally: echo "I'm always run. Even if jobs was falls "
 
   # install:
-  #   commands:
+    # commands:
+      # - apt-get install tree
   #   # some....
   #   - echo "Install environment"
   #   - echo "go to next step"
@@ -31,7 +32,7 @@ phases:
   build:
     commands:
     # some....
-    # - echo Build with git hooks
+    - echo Build with git hooks
     - echo Manual build-method
     - echo git commit is - ${CODEBUILD_RESOLVED_SOURCE_VERSION}
     - ls -la
@@ -42,3 +43,5 @@ phases:
   #   # some...
   #   - echo "Send info messages"
   #   - echo "finish"
+
+  
