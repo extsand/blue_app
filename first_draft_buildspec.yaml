@@ -1,5 +1,9 @@
 # more about
 # https://docs.aws.amazon.com/codebuild/latest/userguide/build-spec-ref.html
+# more about git hooks
+# https://docs.aws.amazon.com/codebuild/latest/userguide/sample-github-pull-request.html
+# more about environment var
+# https://docs.aws.amazon.com/codebuild/latest/userguide/build-env-ref-env-vars.html
 version: 0.2
 
 env:
@@ -8,7 +12,6 @@ env:
     ENV: "developer-mode"
     VERSION: "${CODEBUILD_RESOLVED_SOURCE_VERSION}"
     DIR: "${CODEBUILD_SRC_DIR}"
-
 
 phases:
   # pre_build:
@@ -31,10 +34,10 @@ phases:
   build:
     commands:
     # some....
-    - echo Say somethin about this app.....................=_=
     - echo Build with git hooks
     - echo git commit is - ${CODEBUILD_RESOLVED_SOURCE_VERSION}
-    - echo "Build applicatio
+    - echo "Build application"
+    - echo "go to next step"
 
   # post_build:
   #   commands:
